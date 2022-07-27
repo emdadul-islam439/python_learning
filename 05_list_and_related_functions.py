@@ -32,3 +32,5 @@ sameTypeListItems.reverse()
 differentTypeListItems.append(8)
 sameTypeListItems.insert(0, 'hi') #added 'hi' into 0th-index
 sameTypeListItems.remove('hi')
+sameTypeListItems[0] = 'hi'
+

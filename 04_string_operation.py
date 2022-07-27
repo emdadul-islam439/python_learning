@@ -14,7 +14,7 @@ print(myString[::]) #print all
 
 print('2 -------------------------------- 2')
 print(myString[-7:-1]) #1-based reverse index (7th character from last to last character)
-print(myString[-1:-7])
+print(myString[-1:-7]) #can't print reversed string
 
 
 print('3 -------------------------------- 3')
