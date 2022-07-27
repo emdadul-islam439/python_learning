@@ -9,3 +9,8 @@ print(castedVar)
 
 castedTotal = float(var1 + var2)
 print(castedTotal)
+
+
+numStr = '78'
+strToInt = int(numStr)
+print(strToInt)
