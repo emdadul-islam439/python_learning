@@ -1,9 +1,16 @@
 inputString = input()
 splitStringList = inputString.split()
-(a_plus_b, a_plus_c, b_plus_c, a_plus_b_plus_c) = (int(splitStringList[0]), int(splitStringList[1]), int(splitStringList[2]), int(splitStringList[3]))
+n = int(splitStringList[0])
+k = int(splitStringList[1])
+needed_time = 5
+remaining_time = 240
+no_of_solved_problem = 0
 
-c = a_plus_b_plus_c - a_plus_b
-a = a_plus_c - c
-b = b_plus_c - c
+while(True):
+    remaining_time -= needed_time
+    if(remaining_time < k): 
+        break
+    no_of_solved_problem += 1
+    needed_time += 5
 
-print(a, b, c)
+print(min(no_of_solved_problem, n))

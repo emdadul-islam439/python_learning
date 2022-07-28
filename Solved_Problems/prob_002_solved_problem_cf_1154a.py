@@ -3,35 +3,19 @@
 def cast_list(test_list, data_type):
     return list(map(data_type, test_list))
 
-#number of test-cases
-t = int(input())
-i = 0
+#taking input
+inputString = input()
+splitStringList = inputString.split()
 
-while(i < t):
-    #size of the array
-    n = int(input())
+#type-casted the input string-list
+splitIntList = cast_list(splitStringList, int)
+splitIntList.sort()
 
-    #taking input: element of the array
-    inputString = input()
-    splitStringList = inputString.split()
+#assigning four variables to their respective values
+(a_plus_b, a_plus_c, b_plus_c, a_plus_b_plus_c) = (splitIntList[0], splitIntList[1], splitIntList[2], splitIntList[3])
 
-    #type-casted the input string-list
-    splitIntList = cast_list(splitStringList, int)
-    splitIntList.sort()
+c = a_plus_b_plus_c - a_plus_b
+a = a_plus_c - c
+b = b_plus_c - c
 
-    #initializing two variables
-    j = 1
-    difference_between_two_item = 0
-    
-    #main logic
-    while(j < len(splitIntList)):
-        difference_between_two_item = max(difference_between_two_item, splitIntList[j]-splitIntList[j-1])
-        j += 1
-
-    if(difference_between_two_item > 1): 
-        print('NO')
-    else: 
-        print('YES')
-
-    #increasing the i's value
-    i += 1
+print(a, b, c)
