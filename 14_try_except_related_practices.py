@@ -1,3 +1,4 @@
+# normal try-except blocks
 a = input('Enter a number: ')
 b = input('Enter another number: ')
 
@@ -7,3 +8,5 @@ except Exception as e:
     print('Exception: ', e)
 
 print('program finished')
+
+
