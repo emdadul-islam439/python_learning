@@ -19,3 +19,18 @@ print('(a,b) = ', '(', a, ',', b, ')')
 
 a,b = b,a 
 print('(a,b) = ', '(', a, ',', b, ')')
+
+
+#get true-false from ampersand operator
+checkVar = 10 % 2
+print(checkVar)
+if(checkVar):
+    print('work like True')
+else:
+    print('work like False')
+
+checkVar = 11 % 2
+if(checkVar):
+    print('work like True')
+else:
+    print('work like False')
