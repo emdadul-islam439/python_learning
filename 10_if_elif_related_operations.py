@@ -27,4 +27,4 @@ b = 6
 print('a is greater than b') if(a>b) else print('a is smaller or equal to b')
 
 ## can't add elif between short-hand if-else
-print('a is greater than b') if(a>b) elif(a==b) print('a and b are equal')  else print('a is smaller or equal to b')
+# print('a is greater than b') if(a>b) elif(a==b) print('a and b are equal')  else print('a is smaller or equal to b')

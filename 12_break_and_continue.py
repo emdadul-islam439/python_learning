@@ -11,9 +11,11 @@ while(i < 40):
 while(True):
     inputNumber = int(input('Enter a number: '))
     if inputNumber > 10:
-        print("Input is more than 100.")
+        print("Input is more than 10.")
         break
     else:
         print('Enter again')
+
+
 
 

@@ -7,3 +7,6 @@ print('Your inputted value is: ', inputNum1)
 print('enter another number: ')
 inputNum2 = input()
 print('Your inputted value + 10 = ', int(inputNum2) + 10)
+
+#type-casting while taking input
+var = int(input())

@@ -33,4 +33,3 @@ for key, value in dictionary1.items():
 #can only access the keys with traditional iteration
 for keys in dictionary1:
     print(keys)
-
