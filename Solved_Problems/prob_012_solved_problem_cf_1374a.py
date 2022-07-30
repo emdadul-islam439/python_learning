@@ -1,10 +1,13 @@
-for _ in range(int(input())):
-    x, y, n = map(int, input().split())
-
-    normal_reminder = n % x
-    if normal_reminder == y:
-        print(n)
-    elif normal_reminder > y:
-        print(n - (normal_reminder - y))
+arr = []
+for i in range (10000):
+    if(len(arr) > 1000):
+        break;
+    if i % 3 == 0 or i % 10 == 3:
+        continue
     else:
-        print(n - normal_reminder - x + y)
+        arr.append(i)
+# print(arr)
+
+for _ in range(int(input())):
+    k = int(input())
+    print(arr[k-1])
