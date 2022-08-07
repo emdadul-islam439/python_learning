@@ -20,5 +20,5 @@ for i in range(n):
                 time_count -= arr[start_idx]
                 start_idx += 1
 
-    print(f"i = {i}  arr[i]= {arr[i]}  start_idx = {start_idx}  time_count = {time_count}  max_book_read = {max_book_read}")
+    # print(f"i = {i}  arr[i]= {arr[i]}  start_idx = {start_idx}  time_count = {time_count}  max_book_read = {max_book_read}")
 print(max_book_read)
