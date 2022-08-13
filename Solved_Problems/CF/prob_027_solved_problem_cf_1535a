@@ -1,0 +1,9 @@
+t = int(input())
+while t:
+    t -= 1
+    a, b, c, d = map(int, input().split())
+
+    if (max([a, c, d]) == a and max([b,c,d]) == b) or (max([a,b, c]) == c and max([a,b,d]) == d):
+        print("NO")
+    else:
+        print("YES")
