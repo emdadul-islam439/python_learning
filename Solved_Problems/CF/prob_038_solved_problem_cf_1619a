@@ -1,0 +1,24 @@
+t = int(input())
+
+while t:
+    t -= 1
+    
+    str = input()
+    length = len(str)
+    
+    if length % 2 == 1:
+        print("NO")
+    else:
+        i, j = 0, int(length/2)
+        # print(f"i = {i}   j = {j}")
+        check = True
+        while j < length:
+           if str[i] != str[j]:
+               check = False 
+               print("NO")
+               break
+           i += 1
+           j += 1
+        
+        if check:
+            print("YES")
