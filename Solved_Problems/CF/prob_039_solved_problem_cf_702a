@@ -1,0 +1,19 @@
+n = int(input())
+arr = list(map(int, input().split()))
+
+max_length = 0
+i = 1
+curr_len = 1
+
+while i < n:
+    if arr[i] > arr[i-1]:
+        curr_len += 1
+    else:
+        max_length = max([curr_len, max_length])
+        curr_len = 1
+    
+    # print(f"i = {i}, arr[i]={arr[i]}, curr_len = {curr_len}, max_len= {max_length} ")
+    i += 1
+
+max_length = max([curr_len, max_length])
+print(max_length)
